@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="map5.net.xml"/>
+        <route-files value="trafico_hora_pico.rou.xml"/>
+        <additional-files value="vtypes_reto.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo_map5.xml"/>
+        <fcd-output value="fcd_map5.xml"/>
+    </output>
+
+    <emissions>
+        <device.emissions.probability value="1"/>
+    </emissions>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+</configuration>
