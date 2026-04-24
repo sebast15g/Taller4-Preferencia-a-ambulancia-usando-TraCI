@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+
+    <vType id="ambulancia" vClass="emergency"
+           guiShape="emergency"
+           accel="4.0" decel="5.5" sigma="0.2"
+           length="5.5" minGap="1.5"
+           maxSpeed="22.2"
+           speedFactor="1.2"
+           color="255,255,255"
+           personCapacity="4"
+           impatience="1.0"/>
+
+    <vTypeDistribution id="trafico_hora_pico">
+
+        <!-- Autos privados -->
+        <vType id="auto_sedan"
+               probability="0.30"
+               vClass="passenger"
+               guiShape="passenger/sedan"
+               accel="2.6" decel="4.5" sigma="0.5"
+               length="4.5" minGap="2.5"
+               maxSpeed="13.9"
+               color="0,102,204"
+               personCapacity="5"
+               />
+
+        <vType id="auto_hatchback"
+               probability="0.20"
+               vClass="passenger"
+               guiShape="passenger/hatchback"
+               accel="2.8" decel="4.5" sigma="0.5"
+               length="4.0" minGap="2.3"
+               maxSpeed="13.9"
+               color="0,153,76"
+               personCapacity="5"
+               />
+
+        <vType id="auto_suv"
+               probability="0.12"
+               vClass="passenger"
+               guiShape="passenger/wagon"
+               accel="2.4" decel="4.5" sigma="0.5"
+               length="4.8" minGap="2.7"
+               maxSpeed="13.9"
+               color="102,51,153"
+               personCapacity="7"
+               />
+
+        <vType id="pickup"
+               probability="0.08"
+               vClass="passenger"
+               guiShape="passenger/wagon"
+               accel="2.3" decel="4.5" sigma="0.5"
+               length="5.2" minGap="2.8"
+               maxSpeed="13.9"
+               color="153,102,51"
+               personCapacity="5"
+               />
+
+        <!-- Buses -->
+        <vType id="bus_urbano"
+               probability="0.20"
+               vClass="bus"
+               guiShape="bus"
+               accel="1.2" decel="4.0" sigma="0.5"
+               length="12.0" minGap="3.0"
+               maxSpeed="11.1"
+               color="255,0,0"
+               personCapacity="40"
+               />
+
+        <!-- Motos -->
+        <vType id="moto_urbana"
+               probability="0.1"
+               vClass="motorcycle"
+               guiShape="motorcycle"
+               accel="3.5" decel="4.8" sigma="0.6"
+               length="2.1" minGap="1.2"
+               maxSpeed="15.3"
+               color="255,255,0"
+               personCapacity="2"
+              />
+
+        <vType id="moto_reparto"
+               probability="0.04"
+               vClass="motorcycle"
+               guiShape="motorcycle"
+               accel="3.2" decel="4.8" sigma="0.6"
+               length="2.2" minGap="1.3"
+               maxSpeed="13.9"
+               color="255,204,0"
+               personCapacity="2"
+              />
+    </vTypeDistribution>
+
+</additional>
